@@ -1,0 +1,8 @@
+Cmd line options = -approot /Users/3arthzneiz/droidsafe-src/android-apps/examples/PickContacts_apk -apkfile PickContacts_apk.apk -t specdump 
+Start time = 2018/12/24 16:50:08
+End time = 2018/12/24 17:15:50
+Elapsed Minutes: 25:41
+Used Memory: 3 GB
+Free Memory: 4 GB
+Total Memory: 8 GB
+Max Memory: 14 GB

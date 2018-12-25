@@ -1,0 +1,321 @@
+Flow Summary {
+	UNIQUE_IDENTIFIER -> IPC
+	IPC -> IPC
+	DATABASE_INFORMATION -> IPC
+	UNIQUE_IDENTIFIER -> NETWORK
+}
+// Line: com.example.android.apis.content.PickContact_apk 65
+// InfoFlows: 
+//    receiver:
+//    args:
+//	    0
+//	        UNIQUE_IDENTIFIER: 
+//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk$ResultDisplayer 
+android.view.View$OnClickListener: void onClick({android.widget.Button:{mText:{string:[, Pick a Contact]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 66
+	// Requires permission: android.permission.READ_PHONE_STATE
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink:)
+	//Receiver types: android.telephony.TelephonyManager 
+	android.telephony.TelephonyManager: java.lang.String getDeviceId();
+
+	// Line: com.example.android.apis.content.PickContact_apk 73
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+	//    (Category of Sink: IPC)
+	//Receiver types: com.example.android.apis.content.PickContact_apk 
+	{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void startActivityForResult({android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}, 1);
+
+}
+
+// Line: com.example.android.apis.content.PickContact_apk 65
+// InfoFlows: 
+//    receiver:
+//    args:
+//	    0
+//	        UNIQUE_IDENTIFIER: 
+//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk$ResultDisplayer 
+android.view.View$OnClickListener: void onClick({android.widget.Button:{mText:{string:[, Pick a Person]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 66
+	// Requires permission: android.permission.READ_PHONE_STATE
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink:)
+	//Receiver types: android.telephony.TelephonyManager 
+	android.telephony.TelephonyManager: java.lang.String getDeviceId();
+
+	// Line: com.example.android.apis.content.PickContact_apk 73
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+	//    (Category of Sink: IPC)
+	//Receiver types: com.example.android.apis.content.PickContact_apk 
+	{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void startActivityForResult({android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}, 1);
+
+}
+
+// Line: com.example.android.apis.content.PickContact_apk 65
+// InfoFlows: 
+//    receiver:
+//    args:
+//	    0
+//	        UNIQUE_IDENTIFIER: 
+//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk$ResultDisplayer 
+android.view.View$OnClickListener: void onClick({android.widget.Button:{mText:{string:[, Pick a Phone]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 66
+	// Requires permission: android.permission.READ_PHONE_STATE
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink:)
+	//Receiver types: android.telephony.TelephonyManager 
+	android.telephony.TelephonyManager: java.lang.String getDeviceId();
+
+	// Line: com.example.android.apis.content.PickContact_apk 73
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+	//    (Category of Sink: IPC)
+	//Receiver types: com.example.android.apis.content.PickContact_apk 
+	{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void startActivityForResult({android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}, 1);
+
+}
+
+// Line: com.example.android.apis.content.PickContact_apk 65
+// InfoFlows: 
+//    receiver:
+//    args:
+//	    0
+//	        UNIQUE_IDENTIFIER: 
+//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk$ResultDisplayer 
+android.view.View$OnClickListener: void onClick({android.widget.Button:{mText:{string:[, Pick an Address]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 66
+	// Requires permission: android.permission.READ_PHONE_STATE
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink:)
+	//Receiver types: android.telephony.TelephonyManager 
+	android.telephony.TelephonyManager: java.lang.String getDeviceId();
+
+	// Line: com.example.android.apis.content.PickContact_apk 73
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+	//    (Category of Sink: IPC)
+	//Receiver types: com.example.android.apis.content.PickContact_apk 
+	{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void startActivityForResult({android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}, 1);
+
+}
+
+// Line: com.example.android.apis.content.PickContact_apk 102
+// Possible remote IPC callback method
+// InfoFlows: 
+//    receiver:
+//    args:
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk 
+{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void onActivityResult(-1, -1, {android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 109
+	// Requires permission: android.permission.INTERNET
+	// InfoFlows: 
+	//    receiver:
+	//	    UNIQUE_IDENTIFIER: 
+	//	        $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink: NETWORK)
+	//Receiver types: org.apache.http.impl.client.DefaultHttpClient 
+	org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute({org.apache.http.client.methods.HttpGet:{theURI:{java.net.URI:{string:{string:<INVALIDATED>}}}}});
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 119
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        IPC: 
+	//	            $r11 = virtualinvoke $r1.<android.content.Intent: android.net.Uri getData()>()
+	//    (Method accesses: IPC)
+	//    (Category of Sink:)
+	//Receiver types: droidsafe.concrete.DroidSafeContentResolver 
+	android.content.ContentResolver: android.database.Cursor query(android.net.Uri, java.lang.String[], null, null, null);
+
+	// Line: com.example.android.apis.content.PickContact_apk 119
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        IPC: 
+	//	            $r11 = virtualinvoke $r1.<android.content.Intent: android.net.Uri getData()>()
+	//    (Method accesses: IPC)
+	//    (Category of Sink:)
+	//Receiver types: droidsafe.concrete.DroidSafeContentResolver 
+	android.content.ContentResolver: android.database.Cursor query(android.net.Uri, java.lang.String[], null, null, null);
+
+}
+
+// Line: com.example.android.apis.content.PickContact_apk 102
+// Possible remote IPC callback method
+// InfoFlows: 
+//    receiver:
+//    args:
+//	    2
+//	        UNIQUE_IDENTIFIER: 
+//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+//    (Method accesses: UNIQUE_IDENTIFIER IPC DATABASE_INFORMATION)
+//    (Category of Sink:)
+//Receiver types: com.example.android.apis.content.PickContact_apk 
+{android.app.Activity:{mIntent:{android.content.Intent:{mAction:{string:[android.intent.action.MAIN]}, DSmCategories:{string:[android.intent.category.DEFAULT, android.intent.category.LAUNCHER]}}}}}: void onActivityResult(int, -1, {android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}) {
+	// Line: com.example.android.apis.content.PickContact_apk 109
+	// Requires permission: android.permission.INTERNET
+	// InfoFlows: 
+	//    receiver:
+	//	    UNIQUE_IDENTIFIER: 
+	//	        $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    args:
+	//	    0
+	//	        UNIQUE_IDENTIFIER: 
+	//	            $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+	//    (Method accesses: UNIQUE_IDENTIFIER)
+	//    (Category of Sink: NETWORK)
+	//Receiver types: org.apache.http.impl.client.DefaultHttpClient 
+	org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute({org.apache.http.client.methods.HttpGet:{theURI:{java.net.URI:{string:{string:<INVALIDATED>}}}}});
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 114
+	//Receiver types: android.content.Intent 
+	{android.content.Intent:{mType:{string:[vnd.android.cursor.item/phone_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/contact]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[com.android.settings.USER_DICTIONARY_INSERT]}}}|{android.content.Intent:{DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}, mType:{string:[vnd.android.cursor.item/person]}}}|{android.content.Intent:{mType:{string:[vnd.android.cursor.item/postal-address_v2]}, DSmCategories:{string:[android.intent.category.DEFAULT]}, mAction:{string:[android.intent.action.GET_CONTENT]}}}: android.net.Uri getData();
+
+	// Line: com.example.android.apis.content.PickContact_apk 119
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        IPC: 
+	//	            $r11 = virtualinvoke $r1.<android.content.Intent: android.net.Uri getData()>()
+	//    (Method accesses: IPC)
+	//    (Category of Sink:)
+	//Receiver types: droidsafe.concrete.DroidSafeContentResolver 
+	android.content.ContentResolver: android.database.Cursor query(android.net.Uri, java.lang.String[], null, null, null);
+
+	// Line: com.example.android.apis.content.PickContact_apk 119
+	// InfoFlows: 
+	//    receiver:
+	//    args:
+	//	    0
+	//	        IPC: 
+	//	            $r11 = virtualinvoke $r1.<android.content.Intent: android.net.Uri getData()>()
+	//    (Method accesses: IPC)
+	//    (Category of Sink:)
+	//Receiver types: droidsafe.concrete.DroidSafeContentResolver 
+	android.content.ContentResolver: android.database.Cursor query(android.net.Uri, java.lang.String[], null, null, null);
+
+}
+

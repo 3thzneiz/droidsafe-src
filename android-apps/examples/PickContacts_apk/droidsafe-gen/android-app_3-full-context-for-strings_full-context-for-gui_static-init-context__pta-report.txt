@@ -1,0 +1,50 @@
+App Name: android-app
+Config: 3-full-context-for-strings full-context-for-gui static-init-context 
+Cmdline supplied extra info: 
+ ====== Pre-Analysis Stats ======
+Used Memory Before: 2 GB
+Free Memory Before: 5 GB
+Total Memory Before: 7 GB
+Max Memory Before: 14 GB
+K object depth: 3 extra-array-context
+ ====== Post-Analysis Stats ======
+Time (sec): 132.358
+Used Memory After: 3 GB
+Free Memory After: 3 GB
+Total Memory After: 6 GB
+Max Memory After: 14 GB
+Reachable Methods: 6245
+Reachable Method Contexts: 132266
+Callgraph Edges (Insens): 27849
+Callgraph Edges (CS): 2650755
+Total Casts: 3059
+App Casts: 24
+Total Casts Never Fail: 1880
+App Casts Never Fail: 18
+Total Virtual Calls: 9469
+App Virtual Calls: 237
+Total Polymorphic Calls: 243
+App Polymorphic Calls: 1
+Total Global Pointers: 1103
+Total Global Points To: 1111
+App Global Pointers: 267
+App Global Points To: 270
+Total Global Avg Points-To: 1.0072529465095195
+App Global Avg Points-To: 1.0112359550561798
+Total Local Pointers: 26359
+Total Local Points To: 88570
+App Local Pointers: 780
+App Local Points To: 896
+Total Local Avg Points-To: 3.3601426457756363
+App Local Avg Points-To: 1.1487179487179486
+Number of heap objects: 24886
+
+Total Reachable LOC: 92388
+
+Info Flow Time Sec: 280.877
+Flows into sinks (Args): 2
+Flows into sinks (Args, Precise): 2
+Flows into sinks (Mem): 4
+Flows into sinks (Rec): 1
+Total reachable sink call statments: 2
+Total reachable source call statements: 4

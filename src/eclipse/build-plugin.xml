@@ -2,7 +2,7 @@
 <project name="generateBuildFiles" default="build">
 
 
-  <!-- <property name="target.eclipse.platform"  value="/home/becker/eclipse42/eclipse"/>  -->
+  <!-- <property name="target.eclipse.platform"  value="/Users/3arthzneiz/eclipse/java-2018-12"/>  -->
   <!-- <property name="eclipse.plugin.location"  value="."/>  -->
 
   <condition property="properties.file.found">

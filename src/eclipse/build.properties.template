@@ -1,5 +1,6 @@
 runPackager=true
-target.eclipse.platform=/home/becker/eclipse42/eclipse
+target.eclipse.platform=/Users/3arthzneiz/eclipse/Eclipse.app 
+
 
 feature.id=droidsafe.eclipse.plugin.feature
 plugin.id=droidsafe.eclipse.plugin.core
